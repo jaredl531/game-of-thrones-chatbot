@@ -6,7 +6,7 @@ A simple UI and chatbot to help answer many Game of Thrones-related inquiries! T
 ## How to get started
 The code is completely client-side so all you'll need to do is download the repo, throw it in a cloud folder and call index.html. You'll probably want to generate your own [PubNub API Keys](https://www.pubnub.com/docs/pubnub-rest-api-documentation) for this so that you can view all chats in your own, personal console.
 
-A live demo can also be found [here](https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/index.html) if you want to see it in action right away.
+A live demo can also be found <a href="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/index.html" target="_blank">here</a> if you want to see it in action right away.
 
 ## Usage
 
