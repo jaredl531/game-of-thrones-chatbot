@@ -43,7 +43,8 @@ Note that this only covers parents, spouses, siblings and children. Sadly aunts 
 The names of the actors or actresses who played a certain character and links to their IMDB pages
 
 6. Who plays/played __________?
-<br/>
+
+<br/><br/>
 
 ### Who is who <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/visual-question.png" width="450" align="right"/>
 
