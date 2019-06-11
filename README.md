@@ -12,6 +12,7 @@ A live demo can also be found <a href="https://jared-hack-projects.s3.us-east-2.
 
 The chatbot has been preloaded with the ability to answer questions about the following categories. Note that either first names, first + last names or even nicknames (e.g. The Hound) can be recognized usually.
 
+
 *** SPOILERS BELOW!!! ***
 
 <br/>
@@ -55,3 +56,8 @@ Visual responses that show you who a character is
 8. Show me _________.
 
 
+## Other Features
+
+The page is set to randomly choose one of 10 pre-loaded background images, and if you click on the Stark logo in the top left it'll pick a new one for you instantaneously. 
+
+Of course, there's also music in the bottom left corner and you can stop and start that as you'd like.
