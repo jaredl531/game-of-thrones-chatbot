@@ -1,5 +1,5 @@
 # Game of Thrones Chatbot
-A simple UI and chatbot to help answer many Game of Thrones-related inquiries! The code uses PubNub's API to publish and subscribe to the chats and a dataset from @jeffreylancaster to search and lookup all of the data. You can view some more of his awesome GoT datasets and visualizations [here]( https://github.com/jeffreylancaster/game-of-thrones).
+A simple UI and chatbot to help answer many Game of Thrones-related inquiries! The code uses PubNub's API to publish and subscribe to the chats and a dataset from [@jeffreylancaster](https://github.com/jeffreylancaster/game-of-thrones) to search and lookup all of the data. You can view some more of his awesome GoT datasets and visualizations [here]( https://github.com/jeffreylancaster/game-of-thrones).
 
 <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/full-screen.png"/>
 
