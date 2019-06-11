@@ -12,6 +12,8 @@ A live demo can also be found [here](https://jared-hack-projects.s3.us-east-2.am
 
 The chatbot has been preloaded with the ability to answer questions about the following categories. Note that either first names, first + last names or even nicknames (e.g. The Hound) can be recognized usually.
 
+*** SPOILERS BELOW!!! ***
+
 ### Deaths
 Pretty much everyone who died and who did it to them.
 
@@ -19,8 +21,8 @@ Pretty much everyone who died and who did it to them.
 2. How did/does _________ die?
 3. Who did/does _________ kill?
 
-<!--<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/kill-questions.png" width="500"/>-->
-
+<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/kill-questions.png" width="500"/>
+<br/>
 
 ### Familial Relations
 Note that this only covers parents, spouses, siblings and children. Sadly aunts are not on here, Jon.
@@ -28,14 +30,14 @@ Note that this only covers parents, spouses, siblings and children. Sadly aunts 
 4. Who is _________ related to? 
 5. To whom is _______ related?
 
-<!--<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/relations-questions.png" width="500"/>-->
-
+<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/relations-questions.png" width="500"/>
+<br/>
 
 ### Actors/Actresses
 The names of the actors or actresses who played a certain character and links to their IMDB pages
 
 6. Who plays/played __________?
-
+<br/>
 
 ### Who is who
 Visual responses that show you who a character is
