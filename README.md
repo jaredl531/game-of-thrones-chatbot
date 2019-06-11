@@ -21,7 +21,7 @@ Pretty much everyone who died and who did it to them.
 2. How did/does _________ die?
 3. Who did/does _________ kill?
 
-<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/kill-questions.png" width="500"/>
+<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/killing-questions.png" width="500"/>
 <br/>
 
 ### Familial Relations
