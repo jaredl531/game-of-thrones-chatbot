@@ -36,15 +36,16 @@ Note that this only covers parents, spouses, siblings and children. Sadly aunts 
 
 5. To whom is _______ related?
 
-<br/>
+<br/><br/>
 
-### Actors/Actresses 
+### Actors/Actresses <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/actor-questions.png" width="450" align="right"/>
+
 The names of the actors or actresses who played a certain character and links to their IMDB pages
 
 6. Who plays/played __________?
 <br/>
 
-### Who is who <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/visual-question.png" width="500" align="right"/>
+### Who is who <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/visual-question.png" width="450" align="right"/>
 
 Visual responses that show you who a character is
 
