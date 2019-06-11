@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Game of Thrones Chatbot</title>
+
+	<!-- Instantiate PubNub and some other libraries -->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.23.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="helper-functions.js"></script>
+	<link rel="shortcut icon" href="Images/favicon.ico">
+	
+	<script type="text/javascript">
+	
+		window.onload = function() {
+		
+			// Load random background image
+			chooseRandomBackgroundPic();
+			
+			// Instantiate Pubnub instance
+			var pubnub = new PubNub ({
+	    	publishKey: 'pub-c-54a757f6-efe7-46d9-8fcf-0e909cd32bee',
+	    	subscribeKey: 'sub-c-62309476-34be-11e6-ad57-02ee2ddab7fe'
+	  	}); 
+  		
+			// Force enter key to act as a mouse click
+			$('input').keypress(function (e) {
+  			if (e.keyCode == 13) {
+  				e.preventDefault();
+    			$('#SendButton').click();
+   				return false;
+  			}
+			});
+			
+			// Write default welcome message from Sam
+			$('#chat-output').append('<li class="list-group-item"  style="color: blue;"><strong>Samwell Tarly:</strong> Hello there! Happy to answer any questions here from the Citadel.</li>');
+
+			// Respond to a user submission in the chat window
+			$('#SendButton').click(function(e){
+				// Simply return if nothing is submitted
+				if($('#chat-input').val().length == 0) {
+					return;
+				}
+				
+				else {
+  				pubnub.publish({
+    				channel: 'main-channel',
+    				message: 'User: ' + $('#chat-input').val()
+  				});
+  		
+    			$('#chat-output').append('<li class="list-group-item"><strong>User:</strong> '+  $('#chat-input').val()+'</li>');
+					$('#chat-output').scrollTop($("#chat-output")[0].scrollHeight);
+					
+					// Send the input over for analysis and delay it a few seconds for the chat
+					var samResponse = doTextAnalysis($('#chat-input').val());
+					
+					pubnub.publish({
+    				channel: 'main-channel',
+    				message: 'Samwell Tarly: ' + samResponse
+  				});
+  				
+  				// Wait a second before showing Sam's response, and then force scroll to bottom
+					setTimeout(function() {
+						$('#chat-output').append('<li class="list-group-item"  style="color: blue;"><strong>Samwell Tarly: </strong>' + samResponse + '</li>');
+					}, 1000);
+					
+					setTimeout(function() {
+						$('#chat-output').scrollTop($("#chat-output")[0].scrollHeight);
+					}, 1500);
+					
+  				$('#chat-input').val('');
+					e.preventDefault();
+  			}
+			});
+
+			
+			// Add listener for the console and subscribe to the main channel
+			pubnub.addListener({
+    		message: function(message) {
+        	console.log(message)
+    		}
+			})
+			
+			pubnub.subscribe({
+  			channel: 'main-channel'
+			});
+			
+			// And finally, load JSON file
+			$.getJSON("master-character-list.json", function(data) {
+				console.log("characters.json loaded.");
+				console.log(data);
+				loadCharacterInformation(data);
+			});
+ 
+		}
+	</script>
+	
+	
+	<!-- CSS STYLING -->
+	
+	<style type="text/css">
+	body {
+		background-size: cover;
+	}
+	#chat-output, .private-chat-output {
+  	height: 400px;
+  	overflow-y: auto;
+  	bottom:0;
+	}
+	#online-users .list-group-item {
+  	cursor: pointer;
+  	user-select: none;
+	}
+	#online-users .list-group-item:hover {
+  	text-decoration: underline;
+	}
+	.modal .panel {
+  	margin-bottom: 0px;
+	}
+	.modal .modal-footer {
+ 		margin-top: 0px;
+	}
+	.panel-default {
+		float:right;
+		margin-right:10%;
+		margin-top:0%;
+		width:45%;
+		opacity: 0.85;
+	}
+	</style>
+
+</head>
+
+<body>
+	<div id="bgIconChanger" onclick="chooseRandomBackgroundPic()" style="top:10px; margin-left:15px;"><img src="Images/bg-icon.png" width="50"/></div>
+	
+	<div id="footer" style="position:absolute; bottom:30px; margin-left:15px; width:100%">
+		<audio id="player" controls loop autoplay>
+			<source src="Audio/theme-song.mp3" type="audio/mp3">
+		</audio>
+	</div>
+	
+	<div class="container-fluid">
+  
+  <div class="row">
+    
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Game of Thrones Chat</div>
+        <ul class="list-group" id="chat-output"></ul>
+        <div class="panel-body">
+          <form id="chat">
+            <div class="input-group">
+              <input type="text" class="form-control" id="chat-input"/>
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" id="SendButton">Send Message</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
