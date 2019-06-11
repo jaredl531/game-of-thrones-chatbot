@@ -55,9 +55,11 @@ Visual responses that show you who a character is
 
 8. Show me _________.
 
-
+<br/><br/>
 ## Other Features
 
 The page is set to randomly choose one of 10 pre-loaded background images, and if you click on the Stark logo in the top left it'll pick a new one for you instantaneously. 
 
 Of course, there's also music in the bottom left corner and you can stop and start that as you'd like.
+
+Looking to add more features to this soon so stay on the lookout for that!
