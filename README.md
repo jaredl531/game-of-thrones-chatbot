@@ -40,7 +40,7 @@ Note that this only covers parents, spouses, siblings and children. Sadly aunts 
 
 ### Actors/Actresses <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/actor-questions.png" width="450" align="right"/>
 
-The names of the actors or actresses who played a certain character and links to their IMDB pages
+The names of the actors or actresses who played a certain character and links to their IMDB pages. If more than one actor/actress played a character (e.g. The Night King) all of them will display.
 
 6. Who plays/played __________?
 
