@@ -1,7 +1,7 @@
 # Game of Thrones Chatbot
-A simple UI and chatbot to help answer many Game of Thrones-related inquiries! The code uses PubNub's API to publish and subscribe to the chats and a dataset from [@jeffreylancaster](https://github.com/jeffreylancaster/game-of-thrones) to search and lookup all of the data. You can view some more of his awesome GoT datasets and visualizations [here]( https://github.com/jeffreylancaster/game-of-thrones).
+A simple UI and chatbot to help answer many Game of Thrones-related inquiries! The code uses PubNub's API to publish and subscribe to the chats and a dataset from [@jeffreylancaster](https://github.com/jeffreylancaster) to search and lookup all of the data. You can view some more of his awesome GoT datasets and visualizations [here]( https://github.com/jeffreylancaster/game-of-thrones).
 
-<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/full-screen.png"/>
+<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/full-screen.png"/>
 
 ## How to get started
 The code is completely client-side so all you'll need to do is download the repo, throw it in a cloud folder and call index.html. You'll probably want to generate your own [PubNub API Keys](https://www.pubnub.com/docs/pubnub-rest-api-documentation) for this so that you can view all chats in your own, personal console.
@@ -16,7 +16,7 @@ The chatbot has been preloaded with the ability to answer questions about the fo
 *** SPOILERS BELOW!!! ***
 
 
-### Deaths <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/killing-questions.png" width="450" align="right"/>
+### Deaths <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/killing-questions.png" width="450" align="right"/>
 
 Pretty much everyone who died and who did it to them.
 
@@ -28,7 +28,7 @@ Pretty much everyone who died and who did it to them.
 
 <br/><br/>
 
-### Familial Relations<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/relations-questions2.png" width="450" align="right"/>
+### Familial Relations<img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/relations-questions2.png" width="450" align="right"/>
 
 Note that this only covers parents, spouses, siblings and children. Sadly aunts are not on here, Jon.
 
@@ -38,7 +38,7 @@ Note that this only covers parents, spouses, siblings and children. Sadly aunts 
 
 <br/><br/>
 
-### Actors/Actresses <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/actor-questions.png" width="450" align="right"/>
+### Actors/Actresses <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/actor-questions.png" width="450" align="right"/>
 
 The names of the actors or actresses who played a certain character and links to their IMDB pages. If more than one actor/actress played a character (e.g. The Night King) all of them will display.
 
@@ -46,7 +46,7 @@ The names of the actors or actresses who played a certain character and links to
 
 <br/><br/>
 
-### Who is who <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/github-readme/visual-question.png" width="450" align="right"/>
+### Who is who <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/visual-question.png" width="450" align="right"/>
 
 Visual responses that show you who a character is
 
