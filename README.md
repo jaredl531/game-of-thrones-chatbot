@@ -16,7 +16,7 @@ The chatbot has been preloaded with the ability to answer questions about the fo
 *** SPOILERS BELOW!!! ***
 
 
-### Deaths <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/killing-questions.png" width="450" align="right"/>
+### Deaths <img src="https://jared-hack-projects.s3.us-east-2.amazonaws.com/game-of-thrones-chat/Github-Readme/killing-questions2.png" width="450" align="right"/>
 
 Pretty much everyone who died and who did it to them.
 
